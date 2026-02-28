@@ -1,0 +1,303 @@
+{
+  "crops": [
+    {
+      "name": "Rice",
+      "scientific_name": "Oryza sativa",
+      "category": "Cereal",
+      "synonyms": ["Paddy", "Oryza", "Dhaan"],
+      "soil_requirements": {
+        "min_ph": 5.5,
+        "max_ph": 7.0,
+        "preferred_soil": ["Clay", "Clay Loam"]
+      },
+      "climate_requirements": {
+        "min_temp_c": 20,
+        "max_temp_c": 38,
+        "min_rainfall_mm": 1000,
+        "max_rainfall_mm": 2500
+      },
+      "cost_estimates_per_acre_inr": {
+        "seed_cost": 3000,
+        "fertilizer_cost": 7000,
+        "other_cost": 5000
+      },
+      "avg_yield_tonnes_per_acre": 2.5,
+      "growth_duration_days": 120,
+      "water_requirement": "High",
+      "waterlogging_tolerance": "High",
+      "fungal_risk_in_heavy_rain": true,
+      "common_diseases": ["Blast", "Sheath Blight"],
+      "season": ["Kharif"]
+    },
+
+    {
+      "name": "Maize",
+      "scientific_name": "Zea mays",
+      "category": "Cereal",
+      "synonyms": ["Corn", "Makka"],
+      "soil_requirements": {
+        "min_ph": 5.5,
+        "max_ph": 7.5,
+        "preferred_soil": ["Loam", "Sandy Loam"]
+      },
+      "climate_requirements": {
+        "min_temp_c": 18,
+        "max_temp_c": 35,
+        "min_rainfall_mm": 500,
+        "max_rainfall_mm": 800
+      },
+      "cost_estimates_per_acre_inr": {
+        "seed_cost": 2500,
+        "fertilizer_cost": 6000,
+        "other_cost": 4000
+      },
+      "avg_yield_tonnes_per_acre": 3.5,
+      "growth_duration_days": 100,
+      "water_requirement": "Medium",
+      "waterlogging_tolerance": "Low",
+      "fungal_risk_in_heavy_rain": true,
+      "common_diseases": ["Leaf Blight", "Downy Mildew"],
+      "season": ["Kharif", "Rabi"]
+    },
+
+    {
+      "name": "Wheat",
+      "scientific_name": "Triticum aestivum",
+      "category": "Cereal",
+      "synonyms": ["Gehu"],
+      "soil_requirements": {
+        "min_ph": 6.0,
+        "max_ph": 7.5,
+        "preferred_soil": ["Loam", "Clay Loam"]
+      },
+      "climate_requirements": {
+        "min_temp_c": 10,
+        "max_temp_c": 25,
+        "min_rainfall_mm": 300,
+        "max_rainfall_mm": 600
+      },
+      "cost_estimates_per_acre_inr": {
+        "seed_cost": 2200,
+        "fertilizer_cost": 5500,
+        "other_cost": 3500
+      },
+      "avg_yield_tonnes_per_acre": 2.8,
+      "growth_duration_days": 120,
+      "water_requirement": "Medium",
+      "waterlogging_tolerance": "Low",
+      "fungal_risk_in_heavy_rain": true,
+      "common_diseases": ["Rust", "Powdery Mildew"],
+      "season": ["Rabi"]
+    },
+
+    {
+      "name": "Tomato",
+      "scientific_name": "Solanum lycopersicum",
+      "category": "Vegetable",
+      "synonyms": ["Tamatar"],
+      "soil_requirements": {
+        "min_ph": 6.0,
+        "max_ph": 7.0,
+        "preferred_soil": ["Sandy Loam", "Loam"]
+      },
+      "climate_requirements": {
+        "min_temp_c": 18,
+        "max_temp_c": 30,
+        "min_rainfall_mm": 400,
+        "max_rainfall_mm": 800
+      },
+      "cost_estimates_per_acre_inr": {
+        "seed_cost": 6000,
+        "fertilizer_cost": 10000,
+        "other_cost": 8000
+      },
+      "avg_yield_tonnes_per_acre": 8,
+      "growth_duration_days": 90,
+      "water_requirement": "Medium",
+      "waterlogging_tolerance": "Very Low",
+      "fungal_risk_in_heavy_rain": true,
+      "common_diseases": ["Late Blight", "Early Blight"],
+      "season": ["Kharif", "Rabi"]
+    },
+
+    {
+      "name": "Cotton",
+      "scientific_name": "Gossypium",
+      "category": "Cash Crop",
+      "synonyms": ["Kapas"],
+      "soil_requirements": {
+        "min_ph": 5.8,
+        "max_ph": 8.0,
+        "preferred_soil": ["Black Soil"]
+      },
+      "climate_requirements": {
+        "min_temp_c": 21,
+        "max_temp_c": 35,
+        "min_rainfall_mm": 600,
+        "max_rainfall_mm": 1200
+      },
+      "cost_estimates_per_acre_inr": {
+        "seed_cost": 4500,
+        "fertilizer_cost": 9000,
+        "other_cost": 6000
+      },
+      "avg_yield_tonnes_per_acre": 2,
+      "growth_duration_days": 160,
+      "water_requirement": "Medium",
+      "waterlogging_tolerance": "Low",
+      "fungal_risk_in_heavy_rain": false,
+      "common_diseases": ["Wilt"],
+      "season": ["Kharif"]
+    },
+
+    {
+      "name": "Groundnut",
+      "scientific_name": "Arachis hypogaea",
+      "category": "Legume",
+      "synonyms": ["Peanut", "Moongphali"],
+      "soil_requirements": {
+        "min_ph": 6.0,
+        "max_ph": 7.0,
+        "preferred_soil": ["Sandy Loam"]
+      },
+      "climate_requirements": {
+        "min_temp_c": 20,
+        "max_temp_c": 30,
+        "min_rainfall_mm": 500,
+        "max_rainfall_mm": 1000
+      },
+      "cost_estimates_per_acre_inr": {
+        "seed_cost": 3000,
+        "fertilizer_cost": 5000,
+        "other_cost": 3000
+      },
+      "avg_yield_tonnes_per_acre": 1.5,
+      "growth_duration_days": 110,
+      "water_requirement": "Medium",
+      "waterlogging_tolerance": "Low",
+      "fungal_risk_in_heavy_rain": true,
+      "common_diseases": ["Leaf Spot"],
+      "season": ["Kharif"]
+    },
+
+    {
+      "name": "Sugarcane",
+      "scientific_name": "Saccharum officinarum",
+      "category": "Cash Crop",
+      "synonyms": ["Ganna"],
+      "soil_requirements": {
+        "min_ph": 6.0,
+        "max_ph": 8.0,
+        "preferred_soil": ["Loam"]
+      },
+      "climate_requirements": {
+        "min_temp_c": 20,
+        "max_temp_c": 35,
+        "min_rainfall_mm": 1000,
+        "max_rainfall_mm": 1500
+      },
+      "cost_estimates_per_acre_inr": {
+        "seed_cost": 5000,
+        "fertilizer_cost": 12000,
+        "other_cost": 10000
+      },
+      "avg_yield_tonnes_per_acre": 25,
+      "growth_duration_days": 300,
+      "water_requirement": "High",
+      "waterlogging_tolerance": "Medium",
+      "fungal_risk_in_heavy_rain": false,
+      "common_diseases": ["Red Rot"],
+      "season": ["Annual"]
+    },
+
+    {
+      "name": "Chilli",
+      "scientific_name": "Capsicum annuum",
+      "category": "Vegetable",
+      "synonyms": ["Mirchi"],
+      "soil_requirements": {
+        "min_ph": 6.0,
+        "max_ph": 7.0,
+        "preferred_soil": ["Loam"]
+      },
+      "climate_requirements": {
+        "min_temp_c": 18,
+        "max_temp_c": 30,
+        "min_rainfall_mm": 600,
+        "max_rainfall_mm": 1200
+      },
+      "cost_estimates_per_acre_inr": {
+        "seed_cost": 7000,
+        "fertilizer_cost": 9000,
+        "other_cost": 7000
+      },
+      "avg_yield_tonnes_per_acre": 3,
+      "growth_duration_days": 120,
+      "water_requirement": "Medium",
+      "waterlogging_tolerance": "Low",
+      "fungal_risk_in_heavy_rain": true,
+      "common_diseases": ["Anthracnose"],
+      "season": ["Kharif", "Rabi"]
+    },
+
+    {
+      "name": "Soybean",
+      "scientific_name": "Glycine max",
+      "category": "Legume",
+      "synonyms": ["Soya"],
+      "soil_requirements": {
+        "min_ph": 6.0,
+        "max_ph": 7.5,
+        "preferred_soil": ["Loam"]
+      },
+      "climate_requirements": {
+        "min_temp_c": 20,
+        "max_temp_c": 30,
+        "min_rainfall_mm": 600,
+        "max_rainfall_mm": 1000
+      },
+      "cost_estimates_per_acre_inr": {
+        "seed_cost": 3000,
+        "fertilizer_cost": 6000,
+        "other_cost": 3000
+      },
+      "avg_yield_tonnes_per_acre": 1.8,
+      "growth_duration_days": 110,
+      "water_requirement": "Medium",
+      "waterlogging_tolerance": "Low",
+      "fungal_risk_in_heavy_rain": true,
+      "common_diseases": ["Root Rot"],
+      "season": ["Kharif"]
+    },
+
+    {
+      "name": "Onion",
+      "scientific_name": "Allium cepa",
+      "category": "Vegetable",
+      "synonyms": ["Pyaz"],
+      "soil_requirements": {
+        "min_ph": 6.0,
+        "max_ph": 7.0,
+        "preferred_soil": ["Sandy Loam"]
+      },
+      "climate_requirements": {
+        "min_temp_c": 13,
+        "max_temp_c": 25,
+        "min_rainfall_mm": 350,
+        "max_rainfall_mm": 650
+      },
+      "cost_estimates_per_acre_inr": {
+        "seed_cost": 5000,
+        "fertilizer_cost": 8000,
+        "other_cost": 5000
+      },
+      "avg_yield_tonnes_per_acre": 7,
+      "growth_duration_days": 100,
+      "water_requirement": "Medium",
+      "waterlogging_tolerance": "Very Low",
+      "fungal_risk_in_heavy_rain": true,
+      "common_diseases": ["Downy Mildew"],
+      "season": ["Rabi"]
+    }
+  ]
+}
