@@ -1,0 +1,187 @@
+:root {
+  --bg: #f5f8ef;
+  --card: #ffffff;
+  --text: #1b2a1f;
+  --accent: #2f6d2f;
+  --accent-soft: #dbeed7;
+  --danger: #a12424;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top left, #eef7df 0%, var(--bg) 50%, #e7f0ff 100%);
+}
+
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.langToggle {
+  display: inline-flex;
+  border: 1px solid #bed2b7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.langToggle button,
+.secondaryButton,
+.composer button {
+  border: 1px solid #b0c9ad;
+  border-radius: 10px;
+  background: var(--card);
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.langToggle button {
+  border: none;
+  border-right: 1px solid #bed2b7;
+}
+
+.langToggle button:last-child {
+  border-right: none;
+}
+
+.langToggle .active {
+  background: var(--accent-soft);
+  font-weight: 600;
+}
+
+.chatWindow {
+  border: 1px solid #d4e2cf;
+  background: var(--card);
+  border-radius: 14px;
+  min-height: 240px;
+  max-height: 360px;
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bubbleRow {
+  display: flex;
+}
+
+.bubbleRow.user {
+  justify-content: flex-end;
+}
+
+.bubble {
+  max-width: 80%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  white-space: pre-wrap;
+}
+
+.bubble.user {
+  background: #dceee7;
+}
+
+.bubble.assistant {
+  background: #f2f4f0;
+}
+
+.cardsGrid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.cropCard {
+  background: var(--card);
+  border: 1px solid #d2e2cf;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.cropCard h3 {
+  margin-top: 0;
+}
+
+.cropCard ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.audioPlayer {
+  width: 100%;
+}
+
+.composer {
+  display: grid;
+  grid-template-columns: 96px 1fr auto;
+  gap: 8px;
+}
+
+.composer input {
+  width: 100%;
+  border: 1px solid #afc8a8;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.micButton {
+  border-radius: 999px;
+  width: 96px;
+  height: 56px;
+  border: 1px solid #9ab99a;
+  background: var(--accent-soft);
+  font-size: 18px;
+}
+
+.micButton.recording {
+  background: #ffd6d6;
+  border-color: #f08f8f;
+}
+
+.error {
+  color: var(--danger);
+  margin: 0;
+}
+
+.meta {
+  margin: 0;
+  font-size: 14px;
+  color: #425943;
+}
+
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+@media (max-width: 700px) {
+  .composer {
+    grid-template-columns: 1fr;
+  }
+
+  .micButton {
+    width: 100%;
+    border-radius: 12px;
+  }
+}

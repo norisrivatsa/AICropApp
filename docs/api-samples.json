@@ -1,0 +1,44 @@
+{
+  "chatRequest": {
+    "sessionId": "2af9f6ac-49fd-4c0e-acb1-7ecfd7c5d8e1",
+    "message": "Suggest crops for this month",
+    "language": "en-IN",
+    "userProfile": {
+      "landAreaAcres": 2,
+      "budgetInr": 50000,
+      "irrigation": "medium"
+    },
+    "location": {
+      "lat": 28.6139,
+      "lng": 77.209
+    }
+  },
+  "chatResponse": {
+    "sessionId": "2af9f6ac-49fd-4c0e-acb1-7ecfd7c5d8e1",
+    "assistantText": "Top options are Wheat, Mustard and Gram... This is decision support; consult local KVK/agronomist.",
+    "cards": [
+      {
+        "crop": "Wheat",
+        "suitabilityScore": 84,
+        "profitRangeInrPerAcre": "25000-42000",
+        "waterNeed": "medium",
+        "risk": "low",
+        "confidence": "high",
+        "why": ["RABI season fit: strong", "Irrigation match: medium for medium water crop", "Budget fit score: 90/100"]
+      }
+    ],
+    "locationContext": {
+      "district": "New Delhi",
+      "state": "Delhi",
+      "country": "India"
+    },
+    "audio": {
+      "contentType": "audio/mpeg",
+      "base64": "<base64-mp3>"
+    },
+    "meta": {
+      "season": "rabi",
+      "disclaimer": "This is decision support; consult local KVK/agronomist."
+    }
+  }
+}
